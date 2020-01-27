@@ -2,11 +2,11 @@
 Automatic theme switching based on the visitor's OS preference.
 
 ## TL;DR
-* Introduction
-* Theme Switch
-* Styles
-* Media Query
-* React Component
+* Introduction - Dark mode obsessed. 😎
+* Theme Switch - Allowing a visitor to toggle between light and dark theme with the click of a button.
+* Styles - I nested the styles together. You may want to separate them.
+* Media Query - You can automate the theme based on the visitors operating system choice!
+* React Component - Bundling everything up into a nice component.
 
 ## Introduction
 I've been obsessed with dark themes for a while now. To the point were I will essentially boycott an app or service if I cannot find a way to theme it dark. Just the thought of staring into a blinding white screen is giving me a headache right now.
@@ -190,11 +190,13 @@ And here are the styles I used for this button
 }
 ```
 
-You can see I ended up also storing the toggle state in the component state. That way I can easily conditionally switch between the sun and moon icon. You can see that I also switched things around a bit. My site I still treat the dark theme as default and the light theme as the exception. Therefore I am tracking the state as lightTheme = true/false rather than darkTheme. Same thing, just do whatever works best in your brain.
+You can see I ended up also storing the toggle state in the component state. That way I can easily conditionally switch between the sun and moon icon.
+
+Also switched things around a bit. For my website I still treat the dark theme as default and the light theme as the exception. Therefore I am tracking the state as lightTheme = true/false rather than darkTheme. Same thing, just do whatever works best in your brain.
 
 ## Github Repo
-In addition to the source here which is specific to my website and also uses Ant Design I have posted a Github repository with a more generic React component that lets you have theme switch.
+In addition to the source here which is specific to my implementation and also uses Ant Design I have posted a [Github repository]() with a more generic React component that lets you have theme switch.
 
 All you need to do is include the component and then create your own styles for a dark theme nested within a `.dark-theme` class on the `body`.
 
-Have a good day! 😎
+Have a nice day! 😎
