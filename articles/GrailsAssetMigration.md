@@ -9,7 +9,7 @@ Upgrading our application from Grails 2 to Grails 3 has been a long process. Thi
 * [Including Modules](#including-modules): There are new tags to use within GSPs.
 * [Serving Assets from an External Source](#serving-assets-from-an-external-source): You can easily serve static assets from any URL without changing any asset references.
 
-![](./GrailsAssetMigration.svg)
+![Grails logo](./GrailsAssetMigration.svg)
 
 ## Asset-Pipeline Plugin
 
