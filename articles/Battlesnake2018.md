@@ -6,15 +6,15 @@
 * [Background](#background): Battlesnake is a programming competition where students and industry professionals develop an AI to play a multiplayer version of the classic game Snake.
 * [First Year Competing](#first-year-competing): I was very excited to discover this competition and thought it would be a great way to learn Python.
 * [Getting Started](#getting-started): Set up a basic "starter snake" provided by sendwithus.
-* [Learning the A* Algorithm](#learning-the-a*-algorithm): After getting use to Python and concept of Battlesnake, I needed to give my snake some smarts.
+* [Learning the A* Algorithm](#learning-the-a-algorithm): After getting use to Python and concept of Battlesnake, I needed to give my snake some smarts.
 * [Building a Flood Fill Algorithm](#building-a-flood-fill-algorithm): Now that my snake could find its way around, it needed to see beyond its target.
 * [Basic Behaviour Switching](#basic-behaviour-switching): With a few basic behaviors coded, I needed to be able to switch between them given some parameters.
 * [Aggressive Behaviour](#aggressive-behaviour): Basic survival is taken care of. Now I wanted to be able to hunt my opponents.
 * [The Event](#the-event): The competition consists of a "Bounty Snake" section where you can challenge the sponsors to duels. After that is the tournament itself composed of beginner, intermediate, and expert divisions.
 * [Conclusion](#conclusion): Super fun event! You should go!
-* [Code](#code) for my 2018 entry is on Github.
+* [Code](https://github.com/tyrelh/battlesnake2018) for my 2018 entry is on Github.
 
-# Background
+## Background
 
 [Battlesnake](https://www.battlesnake.io/) is a programming competition where competitors develop an AI to play a multiplayer version of the classic game [Snake](https://en.wikipedia.org/wiki/Snake_(video_game_genre)). Competitors can be individuals or groups; they are mainly students and industry professionals.
 
@@ -137,5 +137,5 @@ I think this is such a great event to participate in. The challenge itself of cr
 
 My code for 2018 is available on [Github](https://github.com/tyrelh/battlesnake2018).
 
-I'll see you next year,/n
+I'll see you next year,
 ZeroCool
