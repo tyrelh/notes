@@ -1,4 +1,7 @@
 # Node CI/CD Pipeline using Github Actions and AWS Elastic Beanstalk
+Here is my journey into creating an automated continuous integration and continuous deployment workflow for a project using Github Actions.
+
+![Github Actions logo with colourful background and text that says GitHub Actions now with built-in CI/CD](./node-cicd-pipeline-hero.png)
 
 ## Tl;dr
 * [Background](#background-on-the-project): I was converting a JavaScript project to TypeScript and I decided at the same time to set up continuous integration and continuous deployment at the same time using Github Actions.
