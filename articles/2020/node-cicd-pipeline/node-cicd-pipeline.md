@@ -4,12 +4,12 @@
 * [Background](#background-on-the-project): I was converting a JavaScript project to TypeScript and I decided at the same time to set up continuous integration and continuous deployment at the same time using Github Actions.
 * [Testing](#testing): I am using [Mocha](https://mochajs.org/) for the first time to run my TypeScript tests.
 * [Automation](#automation): The intention is to create a Github workflow that will test my code, build my project, and deploy it to Elastic Beanstalk automatically whenever I push to the master branch. 
-* [Create an IAM user](#create-an-iam-user): First step is to create a new AWS IAM User to automate interactions with AWS.
-* [Save IAM credentials in Github secrets](#save-iam-credentials-in-github-secrets): Github provides and encrypted secret store that you can use to securely access 3rd-party credentials within a Github Workflow.
-* [Create S3 bucket to store deployment artifacts](#create-s3-bucket-to-store-deployment-artifact): Setup a bucket to store our deployment artifacts so they can be easily deployed and archived.
-* [Create Elastic Beanstalk Application and Environment](#create-elastic-beanstalk-application-and-environment): Create an new application and environment that we can deploy our app to.
-* [Create the workflow yaml file in your repo](#create-the-workflow-yaml-file-in-your-repo): Workflows live in your repo in the *.github/workflows/* directory.
-* [Initial setup of the yaml file](#initial-setup-of-the-yaml-file): Setup your workflow with a trigger and some environment variables for readability and maintainability.
+* [Create a new IAM user](#create-a-new-iam-user): First step is to create a new AWS IAM User to automate interactions with AWS.
+* [Save AWS User credentials in Github](#save-aws-user-credentials-in-github): Github provides and encrypted secret store that you can use to securely access 3rd-party credentials within a Github Workflow.
+* [Create a S3 bucket to store deployment artifacts](#create-a-s3-bucket-to-store-deployment-artifacts): Setup a bucket to store our deployment artifacts so they can be easily deployed and archived.
+* [Create an Elastic Beanstalk Application and Environment](#create-an-elastic-beanstalk-application-and-environment): Create an new application and environment that we can deploy our app to.
+* [Create a Workflow file within your repo](#create-a-workflow-file-within-your-repo): Workflows live in your repo in the *.github/workflows/* directory.
+* [Setup the yaml file](#setup-the-yaml-file): Setup your workflow with a trigger and some environment variables for readability and maintainability.
 * [Test job](#test-job): A job that will test our project.
 * [Build job](#build-job): A job to build our code, bundle it in a zip, and push that to AWS S3.
 * [Deploy job](#deploy-job):  A job to deploy our project to Elastic Beanstalk
@@ -50,7 +50,7 @@ If this fails at any point I get an email and red warnings on Github notifying m
 
 Github actions are powerful and you can do far more complicated things than I am doing. But if this interests you, or lines up with a project you are working on, read on and I'll go over step-by-step how I did this.
 
-## 1. Create a new IAM User
+## Create a new IAM User
 I decided to create a specific IAM User for Github Actions, and specifically this repo.
 
 Log into you AWS Console using your admin account (you created an admin account right? Try not to use you root account) and navigate to IAM.
@@ -86,7 +86,7 @@ We want to save this info as a secret on Github. I would recommend not saving th
 
 **While leaving this tab open**, open a new tab and navigate to the Github repo of your project.
 
-## 2: Save AWS User credentials in Github
+## Save AWS User credentials in Github
 Next you want to save these AWS credentials as a Secret on your Github repo. This will allow you to securely access them in your Github Workflow later on.
 
 In the Github repo of the project you want to automate, click the *Settings* tab near the top right of the page. Choose *Secrets* in the left menu. Then click the *New Secret* button in the upper right.
@@ -101,7 +101,7 @@ Do the same for the *secret key*, naming it something like *AWS_SECRET_KEY*. Mak
 
 Thats it for the user creation! Next we want to prepare a couple other resources in AWS.
 
-## 3: Create S3 bucket to store deployment artifacts
+## Create a S3 bucket to store deployment artifacts
 We are going to store our deployment artifact in S3 so we can easily deploy it to Elastic Beanstalk. Let's create that bucket now.
 
 In your AWS Console, navigate to S3. Click the *Create bucket* button.
@@ -110,7 +110,7 @@ You will need to choose a globally unique (or region unique? I can't remember) n
 
 ![Screenshot of AWS console showing s3 bucket creation where you are choosing a name](./node-cicd-pipeline-s3.png)
 
-## 4: Create an Elastic Beanstalk Application and Environment
+## Create an Elastic Beanstalk Application and Environment
 Next we want to create an Elastic Beanstalk Application. In the AWS Console, navigate to Elastic Beanstalk.
 
 There are many different states your Elastic Beanstalk Console can be in so it is hard to say exactly where this option is but you want to *Create a new application*.
@@ -133,7 +133,7 @@ Click *Create environment* after you double check your details are correct.
 
 Now we are done with the AWS setup. The last piece of this is to create a workflow in our repo that outlines the entire Github Action.
 
-## 5: Create a Workflow file within your repo
+## Create a Workflow file within your repo
 Github Actions work off of [*workflows*](https://help.github.com/en/actions/configuring-and-managing-workflows). *Workflows* are yaml files that live within *.github/workflows/* on your master branch. These yaml files describe the series of actions you want to perform.
 
 There are a few options for creating your first workflow yaml file. The simplest is to use the Github GUI. You can click the *Actions* tab from within your repo. Find the option that says *Skip this and set up a workflow yourself*. This will present you with a web editor and a skeleton workflow file.
