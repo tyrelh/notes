@@ -1,4 +1,4 @@
-# EC2 Notes
+# EC2 - Elastic Compute Cloud
 
 ## General
 Virtual machines (EC2), Storing data (EBS), Distributing load across machines (ELB), Scaling services (ASG)
