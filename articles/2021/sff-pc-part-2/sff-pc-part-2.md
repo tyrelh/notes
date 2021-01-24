@@ -24,6 +24,8 @@ Like many others in 2020, with Cyberpunk 2077 releasing soon and new graphics ca
 
 A sorta disclaimer: the combination of SFF and custom water cooling is tricky to build and requires a lot of planning and some iteration. There just isn't the space to buy whatever components look nice and stick them in the case. Each component needs to work together and especially needs to fit in the case. For me, building the PC is almost more fun than having a completed PC. I decided to do this because the act of building the PC appeals to me. Only attempt something like this if you also feel the same.
 
+Also I talk a bit about my experience mining crypto. This is foremost a gaming and productivity machine and I enjoy mining on the side when my system is idle. Please no judgement or hate from gamers hating on miners. There is no harm (to component prices) in mining on the side with your gaming PC.
+
 I outlined in a [previous post](https://tyrelh.github.io/#/blog/2021/sff-pc-part-1) the initial build and components. This post is my experience upgrading to a full custom water cooling loop for both the CPU and GPU. If you are unaware, "custom" water cooling means that I aquired and assembled all the water cooling components myself and decided on the configuration. That is in contrast to all-in-one (AIO) water coolers available for CPUs and GPUs. These come assembled with a pump, radiator, tubing, and coolant all assembled and sealed, and installation is simple.
 
 ## PC Components
