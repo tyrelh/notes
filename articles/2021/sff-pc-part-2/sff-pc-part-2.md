@@ -213,7 +213,7 @@ Elite Dangerous: Way above 60FPS at 4k Ultra settings.
 
 Cities Skylines: This game is also a bit older now, runs great at 4k Ultra settings above 60FPS.
 
-## Crypto Mining, Underclocking, & Undervolting
+## Crypto Mining, Underclocking & Undervolting
 For mining I was still seeing quite high temps, especially on the CPU while CPU mining.
 
 First I dialed in the CPU. Using Ryzen Master I set an all-core underclock of 3500MHz and brought the peak core voltage down to 1.075v. This made a huge difference to temperatures with little to no negative effect on hash rate. The CPU is hovering around 68°c while mining at 4.3kH/s with XMRig/RandomXmonero in NiceHash getting around 0.00000830 BTC/day (Jan 24 2021). Obviously this isn't very profitable but I don't mind running it given the temperature and other factors I will outline.
