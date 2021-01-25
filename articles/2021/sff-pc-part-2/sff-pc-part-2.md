@@ -18,7 +18,7 @@ This is a continuation of my small form factor PC build. Part 1 was getting the 
 * [Initial Temperatures](#initial-temperatures): I was a little disapointed when I first started it up. It was running hotter than I had hoped.
 * [Fan Tuning & Kryonaut](#fan-tuning-&-kryonaut): Kryonaut paste makes a surprising difference, and dialing in the fan curves keeps it cool and quiet.
 * [Overclocking](#overclocking): I am able to eek a little more power from the GPU for gaming now that my temps are looking good.
-* [Crypto Mining](#crypto-mining-underclocking-&-undervolting): I've been mining with my gaming PC when not actively using it for several years now. Here are some results of this setup.
+* [Crypto Mining, Underclocking & Undervolting](#crypto-mining-underclocking-&-undervolting): I've been mining with my gaming PC when not actively using it for several years now. Here are some results of this setup.
 * [Conclusion](#conclusion): This was challenging, expensive, but a lot of fun to build.
 
 ## Introduction
