@@ -1,0 +1,73 @@
+{
+  "main": {
+    "id": "c841cfd51dce22c0",
+    "type": "split",
+    "children": [
+      {
+        "id": "fef84ec4f1a8adc9",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "articles/2021/game-dev-journey/game-dev-journey.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2b1bc976adbbc80a",
+    "type": "split",
+    "children": [
+      {
+        "id": "48227ac813de6e0c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "660aca0919458ac5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "c82f8257415de8cf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6cdb6a297741a345",
+    "type": "split",
+    "children": [],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "articles/2021/game-dev-journey/game-dev-journey.md",
+    "articles/2021/sff-pc-part-1/sff-pc-part-1.md",
+    "Untitled.md",
+    "articles/2021/game-dev-journey/Untitled.md",
+    "articles/2021/sff-pc-part-2/sff-pc-part-2.md"
+  ]
+}
