@@ -3,7 +3,7 @@
 
 I've been spending a lot of my free time recently on a new hobby. Pixel style 2D game development. Here is a little intro to my dive into 2D game development.
 
-![img](./unity-godot-title-card.jpg)
+![Logos for the Unity game engine on the left and the Godot game engine on the right on a plain white background](./game-dev-unity-godot-title-card.jpg)
 
 ## Tl;dr
 * [Unity](#unity): I first chose to start learning Unity in 2020 as it seemed to be the industry standard tool for game development.
@@ -28,7 +28,9 @@ At the start of 2021 we were quite settled into our new house and I decided to g
 
 In the several months I wasn't doing game development I started following quite a few independent game developers on YouTube, Twitter, and Instagram. Notably I drew lots of inspiration from [DevDuck](https://www.youtube.com/channel/UCKCTmact-90hXpV2ns8GSsA). I still look forward to his devlogs and really enjoy some of his videos where he talks about other aspects of game development apart from code or art, such as managing time and money/tax considerations.
 
-Something I was seeing more and more among independent game developers was the popularity of Godot, the up-and-coming open-source game engine. I decided I would give it a shot, instead of continuing learning Unity. I could see that Unity would be fine for what I wanted to learn but I wanted to see what else was out there before getting too deep
+Something I was seeing more and more among independent game developers was the popularity of Godot, the up-and-coming open-source game engine. I decided I would give it a shot, instead of continuing learning Unity. I could see that Unity would be fine for what I wanted to learn but I wanted to see what else was out there before getting too deep.
+
+![The Godot editor showing a sample scene in the middle and all the menus and options around the perimeter](./game-dev-godot.jpg)
 
 Godot is free to download from their website, but I actually ended up downloading it on Steam for some reason. Maybe just the novelty of downloading non-game software from Steam appealed to me.
 
@@ -39,6 +41,8 @@ Godot's Node and Scene system is a bit different that Unity's prefab system but 
 ## GDScript
 Godot now supports other languages other than GDScript, but I decided I would learn GDScript anyway as it still has the best documentation and support. GDScript has actually been a joy to work with!
 
+![Some sample code written in GD script](./game-dev-gdscript.jpg)
+
 I like the small things like being able to say `onready var` instead of just `var` to denote variables that will be instantiated asynchronous. `_` naming convention for private variables is nice since you always understand you are using a private variable at every reference, not just at declaration.
 
 There are a couple negatives I've run into though. It's typing system is a bit weak and underdeveloped. You cannot use `ENUM`s as types apart from their underlying `int` data structure, and you cannot easily build custom types or interfaces from objects, everything has to just be typed as a `Dictionary` which is a bit unsettling. And there is a bit of oddity with all the different types of optimized `Array`s (such as `PoolStringArray` which I am using frequently), something that could be abstracted into the centralized `Array` class.
@@ -47,6 +51,8 @@ All-in-all it's been a joy to use. Some say it's not as performant as other lang
 
 ## Pixaki
 I own an iPad Pro with an Apple Pencil and I wanted to use that for pixel art. Even though I am no artist I do spend some time sketching things with pencil and paper and I feel more comfortable drawing with a pencil than with a mouse.
+
+![Pixaki app running on an iPad. Image taken from pixaki.com and owned by Pixaki](./game-dev-pixaki.jpg)
 
 The best pixel-art specific app for the iPad is [Pixaki](https://pixaki.com/). It is a polished and actively developed art app with most of the features you would want. I found it very intuitive to use it with the pencil.
 
@@ -66,6 +72,8 @@ If you are really looking for an app to use on your iPad Pro and you have an App
 
 ## Aseprite
 Actually before I purchased Pixaki I purchased a license for [Aseprite](https://www.aseprite.org/). My partner was learning pixel art and I bought this license to share with her. It wasn't until earlier this year and after playing around with Pixaki for a while that I decided to try Aseprite on my PC.
+
+![Aseprite logo taken from their website aseprite.org. Image owned by Aseprite](./game-dev-aseprite.jpg)
 
 Aseprite is exactly what you need when it comes to creating pixel art for games.
 
